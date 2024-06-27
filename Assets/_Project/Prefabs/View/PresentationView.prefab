@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 3
   m_Viewport: {fileID: 5840356561233273404}
   m_HorizontalScrollbar: {fileID: 1022200487942546391}
   m_VerticalScrollbar: {fileID: 208330866866458427}
@@ -1134,7 +1134,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 406807798039299454, guid: b0a527b9e24c63440bcfc2f8bf85ced2, type: 3}
       propertyPath: m_Name
-      value: PresentationView1 1
+      value: PresentationView
       objectReference: {fileID: 0}
     - target: {fileID: 1911351507973055590, guid: b0a527b9e24c63440bcfc2f8bf85ced2, type: 3}
       propertyPath: m_MatchWidthOrHeight
@@ -1272,7 +1272,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvasGroup: {fileID: 392218872354808061}
-  <ViewType>k__BackingField: 1
   _config: {fileID: 11400000, guid: 11d22847326ff4c4383446e5da16b10d, type: 2}
   _slideParent: {fileID: 7565477485782492209}
   _swipeSnapMenu: {fileID: 1107737916612049702}
