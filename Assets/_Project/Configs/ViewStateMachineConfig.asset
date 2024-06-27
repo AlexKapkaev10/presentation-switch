@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb38218e2cf4a2c84d3353029364602, type: 3}
+  m_Name: ViewStateMachineConfig
+  m_EditorClassIdentifier: 
+  _menuViewPrefab: {fileID: 5305530790483142195, guid: 3515b8f50a1daa4498ea671d39d39aa9, type: 3}
+  _presentationViewPrefab: {fileID: 924424829379280035, guid: 876208a5e499d38439d3a093c337e434, type: 3}
