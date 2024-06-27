@@ -5,7 +5,7 @@ namespace Project.Scripts.View
 {
     public class PresentationView : View
     {
-        [SerializeField] private ViewConfig _config;
+        [SerializeField] private PresentationViewConfig _config;
         [SerializeField] private RectTransform _slideParent;
         [SerializeField] private SwipeSnapMenu _swipeSnapMenu;
 

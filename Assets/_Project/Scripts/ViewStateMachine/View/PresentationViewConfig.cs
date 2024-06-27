@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace Project.Scripts.View
 {
-    [CreateAssetMenu(fileName = nameof(ViewConfig), menuName = "Configs/View/ViewConfig")]
-    public class ViewConfig : ScriptableObject
+    [CreateAssetMenu(fileName = nameof(PresentationViewConfig), menuName = "Configs/View/PresentationViewConfig")]
+    public class PresentationViewConfig : ScriptableObject
     {
         [field: SerializeField] public Slide SlidePrefab { get; private set; }
         [SerializeField] private ViewData[] viewData;
