@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -8,9 +7,6 @@ namespace Project.Scripts.View.Swipe
 {
     public class SwipeSnapMenu : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     {
-        public event Action<int> TabSelected;
-        public event Action<int> TabSnapped;
-        
         [SerializeField] private RectTransform _contentContainer;
         [SerializeField] private Scrollbar _scrollbar;
         [SerializeField] private float _snapSpeed = 15f;
@@ -29,9 +25,9 @@ namespace Project.Scripts.View.Swipe
         public void Initialize()
         {
             _nextButton.SetDisplay(false);
-            _nextButton.SetDisplay(false);
-
             _nextButton.Click += SlideNext;
+            
+            _previousButton.SetDisplay(false);
             _previousButton.Click += SlidePrevious;
 
             Recalculate();
@@ -117,8 +113,6 @@ namespace Project.Scripts.View.Swipe
 
             _previousButton.SetDisplay(_selectedTabIndex != 0);
             _nextButton.SetDisplay(_selectedTabIndex != _itemPositionsNormalized.Count - 1);
-
-            TabSelected?.Invoke(tabIndex);
         }
 
         private void FindSnappingTabAndStartSnapping()
@@ -153,7 +147,6 @@ namespace Project.Scripts.View.Swipe
             if (Mathf.Abs(_scrollbar.value - targetPosition) <= 0.0001f)
             {
                 _isSnapping = false;
-                TabSnapped?.Invoke(_selectedTabIndex);
             }
         }
     }

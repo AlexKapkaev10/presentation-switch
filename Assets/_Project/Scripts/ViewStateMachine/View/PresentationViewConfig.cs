@@ -1,6 +1,7 @@
 using System;
 using Project.Scripts.View.Swipe;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Project.Scripts.View
 {
@@ -14,7 +15,7 @@ namespace Project.Scripts.View
         {
             foreach (var data in viewData)
             {
-                if (data.ViewType == viewType)
+                if (data._viewType == viewType)
                 {
                     return data.Slides;
                 }
@@ -27,7 +28,7 @@ namespace Project.Scripts.View
     [Serializable]
     public struct ViewData
     {
-        public ViewType ViewType;
+        [FormerlySerializedAs("_buttonType")] [FormerlySerializedAs("ViewType")] public ViewType _viewType;
         public Sprite[] Slides;
     }
 }

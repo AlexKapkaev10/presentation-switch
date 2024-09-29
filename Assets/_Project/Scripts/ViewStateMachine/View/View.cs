@@ -18,10 +18,9 @@ namespace Project.Scripts.View
         [SerializeField] private CanvasGroup _canvasGroup;
         
         private ICustomButton[] _customButtons;
-
-        private void Awake()
+        
+        private void OnEnable()
         {
-            SetVisible(true);
             _customButtons = GetComponentsInChildren<ICustomButton>();
 
             foreach (var button in _customButtons)
@@ -33,6 +32,24 @@ namespace Project.Scripts.View
                 
                 button.ClickType += OnSwitchViewClick;
             }
+        }
+
+        private void OnDisable()
+        {
+            foreach (var button in _customButtons)
+            {
+                if (button.ViewType == ViewType.None)
+                {
+                    continue;
+                }
+                
+                button.ClickType -= OnSwitchViewClick;
+            }
+        }
+
+        private void Awake()
+        {
+            SetVisible(true);
         }
 
         private void OnDestroy()
@@ -66,7 +83,7 @@ namespace Project.Scripts.View
                 });
         }
     }
-
+    
     public enum ViewType
     {
         None = -1,
@@ -77,6 +94,6 @@ namespace Project.Scripts.View
         Presentation4 = 4,
         Presentation5 = 5,
         Presentation6 = 6,
-        Presentation7 = 7
+        Presentation7 = 7,
     }
 }

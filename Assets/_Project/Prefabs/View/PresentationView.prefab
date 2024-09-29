@@ -872,6 +872,14 @@ PrefabInstance:
       propertyPath: _presentationType
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 7254453291424575268, guid: b67184efdeec3e444941f14981407abf, type: 3}
+      propertyPath: <ViewType>k__BackingField
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254453291424575268, guid: b67184efdeec3e444941f14981407abf, type: 3}
+      propertyPath: <ButtonType>k__BackingField
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -903,7 +911,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2112912028093357963, guid: b67184efdeec3e444941f14981407abf, type: 3}
       propertyPath: m_Name
-      value: CustomButton
+      value: ButtonMenu
       objectReference: {fileID: 0}
     - target: {fileID: 5839240803013179208, guid: b67184efdeec3e444941f14981407abf, type: 3}
       propertyPath: m_Pivot.x
@@ -1103,6 +1111,14 @@ PrefabInstance:
       propertyPath: _presentationType
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 7254453291424575268, guid: b67184efdeec3e444941f14981407abf, type: 3}
+      propertyPath: <ViewType>k__BackingField
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254453291424575268, guid: b67184efdeec3e444941f14981407abf, type: 3}
+      propertyPath: <ButtonType>k__BackingField
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1239,10 +1255,10 @@ PrefabInstance:
       addedObject: {fileID: 8536404984277265094}
     - targetCorrespondingSourceObject: {fileID: 5631002338642558873, guid: b0a527b9e24c63440bcfc2f8bf85ced2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2168490479063725570}
+      addedObject: {fileID: 5346336655457534549}
     - targetCorrespondingSourceObject: {fileID: 5631002338642558873, guid: b0a527b9e24c63440bcfc2f8bf85ced2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5346336655457534549}
+      addedObject: {fileID: 2168490479063725570}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 406807798039299454, guid: b0a527b9e24c63440bcfc2f8bf85ced2, type: 3}
       insertIndex: -1
